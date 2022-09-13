@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <script type = "module" src="js/js.js" defer></script>
+    <title>Estacionamento Pare Aki</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="divbotoes">
+            <img src="img/pareaki.png" width="80%" height="300px">
+            <button class="button button1" id="registrarveiculo">Registrar Veículo</button>
+            <button class="button button2" id="liberarveiculo">Liberar veículo</button>
+            <button class="button button3" id="relatorio">Gerar Relatório</button>
+            <button class="button button4" id="valor">Valor</button>
+        </div>
+        <div id="estacionar">
+            <input type="text" placeholder="ID" id="id">
+            <input type="text" placeholder="PLACA" id="placa">
+            <input type="text" placeholder="MARCA" id="marca">
+            <input type="text" placeholder="COR" id="cor">
+            <input type="text" placeholder="NOME DO PROPRIETÁRIO" id="nomeprop">
+            <input type="text" placeholder="NÚMERO DE PORTAS" id="numportas">
+            <input type="text" placeholder="MOTO OU CARRO" id="tipo">
+            <button class="button button5" id="botaoestacionar">ESTACIONAR</button>
+        </div>
+        <div id="liberar">
+            <input type="text" placeholder="PLACA" id="liberarplaca">
+            <button class="button button6" id="freecar">LIBERAR</button>
+        </div>
+        <div id="saldo">
+            <h1>SALDO: </h1>
+            <p id="valor"></p>
+        </div>
+    </div> 
+
+</body>
+
+</html>
