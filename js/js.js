@@ -16,7 +16,9 @@ let novotipo = document.getElementById("tipo")
 let freecar = document.getElementById("freecar")
 let liberarplaca = document.getElementById("liberarplaca")
 let valorsaldo = document.getElementById("valorsaldo")
-
+let saldobtn = document.getElementById("saldobtn")
+let conteudorelatorio = document.getElementById("conteudorelatorio")
+let relatoriobtn = document.getElementById("relatoriobtn")
 
 botaoregistrar.addEventListener("click", () => {
     document.getElementById("estacionar").style.display = 'flex'
@@ -38,6 +40,31 @@ freecar.addEventListener("click", () => {
 
 valor.addEventListener("click", () => {
     document.getElementById("saldo").style.display = 'flex'
+    valorsaldo.innerHTML = parking.saldo
+
 })
 
+saldobtn.addEventListener("click", () => {
+    document.getElementById("saldo").style.display = 'none'
+    
+})
+
+relatorio.addEventListener("click", () => {
+    document.getElementById("relatoriodiv").style.display = 'flex'
+    console.log(parking.historico)
+    let texto = ''
+    for (let i = 0; i<parking.historico.length; i++){
+        texto += " ID: " +  parking.historico[i].id + " PLACA: " + parking.historico[i].placa + " MARCA: " + parking.historico[i].marca + " COR " +  parking.historico[i].cor + " NOME DO PROPRIETÁRIO: " + parking.historico[i].nomeprop + "\n"
+    }
+    for (let i = 0; i<parking.vagas.length; i++){
+        texto += " ID: " +  parking.vagas[i].id + " PLACA: " + parking.vagas[i].placa + " MARCA: " + parking.vagas[i].marca + " COR " +  parking.vagas[i].cor + " NOME DO PROPRIETÁRIO: " + parking.vagas[i].nomeprop + "\n"
+    }
+    console.log(texto)
+    conteudorelatorio.innerHTML = texto
+})
+
+relatoriobtn.addEventListener("click", () => {
+    document.getElementById("relatoriodiv").style.display = 'none'
+    
+})
 

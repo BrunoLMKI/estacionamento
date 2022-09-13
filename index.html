@@ -19,24 +19,32 @@
             <button class="button button3" id="relatorio">Gerar Relatório</button>
             <button class="button button4" id="valor">Valor</button>
         </div>
+        <div class="divleft">
         <div id="estacionar">
-            <input type="text" placeholder="ID" id="id">
-            <input type="text" placeholder="PLACA" id="placa">
-            <input type="text" placeholder="MARCA" id="marca">
-            <input type="text" placeholder="COR" id="cor">
-            <input type="text" placeholder="NOME DO PROPRIETÁRIO" id="nomeprop">
-            <input type="text" placeholder="NÚMERO DE PORTAS" id="numportas">
-            <input type="text" placeholder="MOTO OU CARRO" id="tipo">
-            <button class="button button5" id="botaoestacionar">ESTACIONAR</button>
+            <input class="placeholderparking" type="text" placeholder="ID" id="id">
+            <input class="placeholderparking" type="text" placeholder="PLACA" id="placa">
+            <input class="placeholderparking" type="text" placeholder="MARCA" id="marca">
+            <input class="placeholderparking" type="text" placeholder="COR" id="cor">
+            <input class="placeholderparking" type="text" placeholder="NOME DO PROPRIETÁRIO" id="nomeprop">
+            <input class="placeholderparking" type="text" placeholder="NÚMERO DE PORTAS" id="numportas">
+            <input class="placeholderparking" type="text" placeholder="MOTO OU CARRO" id="tipo">
+            <button class="btn5" id="botaoestacionar">ESTACIONAR</button>
         </div>
         <div id="liberar">
-            <input type="text" placeholder="PLACA" id="liberarplaca">
-            <button class="button button6" id="freecar">LIBERAR</button>
+            <input class="placeholderliberar" type="text" placeholder="PLACA" id="liberarplaca">
+            <button class="btn6" id="freecar">LIBERAR</button>
         </div>
         <div id="saldo">
             <h1>SALDO: </h1>
-            <p id="valor"></p>
+            <h1 id="valorsaldo"></h1>
+            <button class="btn7" id="saldobtn">OK</button>
         </div>
+        <div id="relatoriodiv">
+            <p id="conteudorelatorio"></p>
+            <button class="btn8" id="relatoriobtn">OK</button>
+
+        </div>
+    </div>
     </div> 
 
 </body>

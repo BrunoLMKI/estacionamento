@@ -55,4 +55,8 @@ export default class estacionamento {
         return this._historico
 
     }
+
+    get vagas() {
+        return this._vagas;
+    }
 }

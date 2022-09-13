@@ -18,6 +18,15 @@ body {
 
 }
 
+.divleft{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+
+}
+
 .divbotoes {
     width: 25%;
     height: 100%;
@@ -87,6 +96,14 @@ img{
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.719), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
+.btn5{
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+
+}
 #liberar{
 
     display: none;
@@ -100,4 +117,22 @@ img{
 #saldo{
 
     display: none;
+}
+
+#relatoriodiv{
+
+    display: none;
+}
+
+.placeholderparking{
+    height: 100px;
+    width: 150px;
+    align-content: center;
+}
+
+.placeholderliberar{
+    height: 100px;
+    width: 150px;
+    align-content: center;
+
 }
